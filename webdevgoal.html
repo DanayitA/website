@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>My Goals</title>
+<style>
+h1, footer {
+    text-align: center;
+}
+body {background-color: bisque;}
+footer>a, footer>a:visited {
+    text-decoration: none;
+    color: rgb(79, 148, 217);
+}
+</style>
+<script>
+function init() {
+  var loc = window.location.href;
+  var HTMLvalidLinkStr = 'http://validator.w3.org/check?uri=' + loc;
+  console.log(HtmlvalidLinkStr);
+  var CSSvalidLinkStr = 'http://jigsaw.w3.org/css-validator/validator?uri=' +
+                        loc + '?profile=css3';
+  document.getElementById("vLink1").setAttribute("href", HTMLvalidLinkStr);
+  document.getElementById("vLink2").setAttribute("href", CSSvalidLinkStr);
+}
+window.onload = init;
+</script>
+</head>
+<body>
+<h1>My Life Goals</h1>
+I am interested in a diffrent field of life so its hard for me to assign a goal in general,
+but I would say my long term goal is to be able to 
+work in those different fields and to be able to form one thing that i would be proud when i look back.
+<ul> 
+    <li>My Short Term Goalto finish school</li></ul>
+
+<footer>
+<a id="vLink1"><strong> HTML </strong> Valid! </a> |
+<a id="vLink2"><strong> CSS </strong> Valid! </a>
+</footer>
+</body>
+</html>
