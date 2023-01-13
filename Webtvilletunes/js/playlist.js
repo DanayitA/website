@@ -23,6 +23,7 @@ function handleButtonClick() {
 function init() {
     var button = document.getElementById("addButton");
     button.onclick = handleButtonClick;
-    loadPlaylist();
+    loadPlaylist()
+        addValidation();
     }
     widnow.onload = init;
