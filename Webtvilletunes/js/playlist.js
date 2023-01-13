@@ -1,3 +1,11 @@
+
+ widnow.onload = init;
+function init() {
+    var button = document.getElementById("addButton");
+    button.onclick = handleButtonClick;
+    loadPlaylist()
+        addValidation();
+    }
 function handleButtonClick() {
         var TextInput = document.getelementById("songTextInput");
         var songName = textInput.value;
@@ -20,10 +28,5 @@ function handleButtonClick() {
   document.getElementById("vLink1").setAttribute("href", HTMLvalidLinkStr);
   document.getElementById("vLink2").setAttribute("href", CSSvalidLinkStr);
 }
-function init() {
-    var button = document.getElementById("addButton");
-    button.onclick = handleButtonClick;
-    loadPlaylist()
-        addValidation();
-    }
-    widnow.onload = init;
+
+   
