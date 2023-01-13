@@ -1,13 +1,13 @@
-
- widnow.onload = init;
+window.onload = init;
 
 function init() {
-    var button = document.getElementById("addButton");
-    button.onclick = handleButtonClick;
+  var button = document.getElementById("addButton");
+  button.onclick = handleButtonClick;
  
-    loadPlaylist();
-     addValidation();
-    }
+  loadPlaylist();
+  addValidation();
+}
+
 function handleButtonClick(e) {
         var TextInput = document.getelementById("songTextInput");
         var songName = textInput.value;
@@ -22,9 +22,9 @@ function handleButtonClick(e) {
         ul.appendChild(li);
         save(songName);
          textInput.value = "";
+        }
     }
-    }
-    function addValidation() {
+  function addValidation() {
   var loc = window.location.href;
   var HTMLvalidLinkStr = 'http://validator.w3.org/check?uri=' + loc;
   var CSSvalidLinkStr = 'http://jigsaw.w3.org/css-validator/validator?uri=' +
